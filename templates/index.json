@@ -6,38 +6,39 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Image banner",
+            "heading": "Virtual Pets Banner",
             "heading_size": "h0"
           }
         },
         "text": {
           "type": "text",
           "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text": "Explore this site about Virtual Pets",
             "text_style": "body"
           }
         },
         "button": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "Shop all",
+            "button_label_1": "Shop All Pets",
             "button_link_1": "shopify://collections/all",
             "button_style_secondary_1": true,
-            "button_label_2": "",
+            "button_label_2": "Explore More About Virtual Pets",
             "button_link_2": "",
-            "button_style_secondary_2": false
+            "button_style_secondary_2": true
           }
         }
       },
       "block_order": [
         "heading",
-        "text",
-        "button"
+        "button",
+        "text"
+
       ],
       "settings": {
         "image_overlay_opacity": 40,
         "image_height": "large",
-        "desktop_content_position": "bottom-center",
+        "desktop_content_position": "top-center",
         "show_text_box": false,
         "desktop_content_alignment": "center",
         "color_scheme": "scheme-3",
@@ -52,14 +53,14 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Talk about your brand",
+            "heading": "Talk about your Pets",
             "heading_size": "h1"
           }
         },
         "text": {
           "type": "text",
           "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
+            "text": "<p>Check Information about virtual pets, they are amazing.<\/p><p>Virtual pets are not only for pets but also for people.<\/p>"
           }
         }
       },
@@ -74,24 +75,36 @@
         "padding_bottom": 0
       }
     },
+    "pet_of_the_day": {
+      "type": "pet-of-the-day",
+      "settings": {
+        "padding_top": 48,
+        "padding_bottom": 44,
+        "h3_font_size": 44,
+        "h2_font_size": 50,
+      }
+    },
+    "slideshow": {
+      "type": "slideshow",
+    },
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
-        "title": "Featured products",
+        "title": "Featured Virtual Pets",
         "heading_size": "h2",
         "collection": "all",
-        "products_to_show": 8,
-        "columns_desktop": 4,
-        "color_scheme": "scheme-1",
-        "show_view_all": false,
+        "products_to_show": 3,
+        "columns_desktop": 3,
+        "color_scheme": "scheme-2",
+        "show_view_all": true,
         "swipe_on_mobile": false,
         "image_ratio": "adapt",
         "show_secondary_image": true,
         "show_vendor": false,
         "show_rating": false,
         "columns_mobile": "2",
-        "padding_top": 28,
-        "padding_bottom": 36
+        "padding_top": 20,
+        "padding_bottom": 40
       }
     },
     "collage": {
@@ -123,11 +136,11 @@
         "collection-1"
       ],
       "settings": {
-        "heading": "Multimedia collage",
-        "heading_size": "h2",
+        "heading": "Multimedia Pet Collage",
+        "heading_size": "h3",
         "desktop_layout": "left",
         "mobile_layout": "collage",
-        "color_scheme": "scheme-1",
+        "color_scheme": "scheme-3",
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -152,7 +165,7 @@
           "type": "column",
           "settings": {
             "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text": "<p>Pet Column 1<\/p>",
             "link_label": "",
             "link": ""
           }
@@ -161,7 +174,7 @@
           "type": "column",
           "settings": {
             "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text": "<p>Pet Column 2<\/p>",
             "link_label": "",
             "link": ""
           }
@@ -170,7 +183,7 @@
           "type": "column",
           "settings": {
             "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text": "<p>Pet Column 3<\/p>",
             "link_label": "",
             "link": ""
           }
@@ -201,6 +214,8 @@
   },
   "order": [
     "image_banner",
+    "pet_of_the_day",
+    "slideshow",
     "rich_text",
     "featured_collection",
     "collage",

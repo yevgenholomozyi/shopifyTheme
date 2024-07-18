@@ -487,7 +487,7 @@
           "settings": {
             "text": {
               "label": "Text",
-              "default": "Welcome to our store"
+              "default": "Welcome to Our Virtual Pet Store"
             },
             "text_alignment": {
               "label": "Text alignment",
@@ -523,19 +523,19 @@
       }
     },
     "collage": {
-      "name": "Collage",
+      "name": "Pet Collage",
       "settings": {
         "heading": {
-          "default": "Multimedia collage",
+          "default": "Multimedia Pet Collage",
           "label": "Heading"
         },
         "desktop_layout": {
           "label": "Desktop layout",
           "options__1": {
-            "label": "Left large block"
+            "label": "Right large block"
           },
           "options__2": {
-            "label": "Right large block"
+            "label": "Left large block"
           }
         },
         "mobile_layout": {
@@ -1187,7 +1187,7 @@
       }
     },
     "image-banner": {
-      "name": "Image banner",
+      "name": "Virtual Pets Banner",
       "settings": {
         "image": {
           "label": "First image"
@@ -1287,7 +1287,7 @@
           "settings": {
             "heading": {
               "label": "Heading",
-              "default": "Image banner"
+              "default": "Virtual Pets Banner"
             }
           }
         },
@@ -1296,7 +1296,7 @@
           "settings": {
             "text": {
               "label": "Description",
-              "default": "Give customers details about the banner image(s) or content on the template."
+              "default": "Explore this site about Virtual Pets"
             },
             "text_style": {
               "options__1": {
@@ -1341,8 +1341,12 @@
         }
       },
       "presets": {
-        "name": "Image banner"
+        "name": "Virtual Pets Banner"
       }
+    },
+    "pet-of-the-day": {
+      "name": "Pet of the day",
+      "settings": {}
     },
     "image-with-text": {
       "name": "Image with text",
@@ -2916,7 +2920,7 @@
           "settings": {
             "heading": {
               "label": "Heading",
-              "default": "Talk about your brand"
+              "default": "Talk about your Pets"
             }
           }
         },
@@ -2955,7 +2959,7 @@
           "settings": {
             "text": {
               "label": "Description",
-              "default": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>"
+              "default": "<p>Check Information about virtual pets, they are amazing.<\/p><p>Virtual pets are not only for pets but also for people.<\/p>"
             }
           }
         },

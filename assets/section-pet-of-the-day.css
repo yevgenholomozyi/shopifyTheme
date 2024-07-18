@@ -1,0 +1,11 @@
+.pet-of-the-day {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.pet-of-the-day-centred {
+    text-align: center;
+}

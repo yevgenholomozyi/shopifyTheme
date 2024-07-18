@@ -1,0 +1,81 @@
+{{ 'section-pet-of-the-day.css' | asset_url | stylesheet_tag }}
+
+{% assign pet_of_the_day = null %}
+{% for product in collections.all.products %}
+  {% if product.metafields.custom.pet_of_the_day == true %}
+    {% assign pet_of_the_day = product %}
+    {% break %}
+  {% endif %}
+{% endfor %}
+
+{% if pet_of_the_day %}
+  <div
+    class="pet-of-the-day"
+    style="padding-top: {{ section.settings.padding_top }}px; padding-bottom: {{ section.settings.padding_bottom }}px"
+  >
+    <h2 class="center" style="font-size: {{ section.settings.h2_font_size }}px;">Pet of the Day</h2>
+    <div>
+      <img
+        width="300"
+        height="300"
+        src="{{ pet_of_the_day.featured_image | img_url: 'medium' }}"
+        alt="{{ pet_of_the_day.title }}"
+      >
+      <h3 class="center" style="font-size: {{ section.settings.h3_font_size }}px;">
+        {{ pet_of_the_day.title }}
+      </h3>
+      <p class="center">{{ pet_of_the_day.price }}</p>
+      <div class="center">
+        <a href="{{ pet_of_the_day.url }}" class="btn">View Product</a>
+      </div>
+    </div>
+  </div>
+{% else %}
+  <p class="center">No pet of the day selected.</p>
+{% endif %}
+
+{% schema %}
+{
+  "name": "Pet of the Day",
+  "settings": [
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "Padding Top",
+      "default": 20,
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "default": 20,
+      "min": 0,
+      "max": 100,
+      "label": "Padding Botom",
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "h2_font_size",
+      "label": "H2 Font Size",
+      "default": 25,
+      "min": 10,
+      "max": 50,
+      "step": 5,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "h3_font_size",
+      "label": "H3 Font Size",
+      "default": 20,
+      "min": 10,
+      "max": 50,
+      "unit": "px"
+    }
+  ]
+}
+{% endschema %}
